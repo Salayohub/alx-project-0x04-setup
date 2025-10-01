@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { PageRouteProps } from "@/interface";
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
-import CounterApp from "./counter-app";
 
 export default function Home() {
   const router = useRouter();
@@ -17,7 +16,7 @@ export default function Home() {
     
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center">
      <div className="w-full ">
-      <Header />
+      
      </div>
       {/* Welcome Message */}
       <h1 className="text-4xl font-bold text-gray-800 mb-4">
@@ -35,7 +34,7 @@ export default function Home() {
         <Button action={() => routeToNextPage({ pageRoute: '/counter-app'})} buttonLabel="Contact us" buttonBackgroundColor="orange" />
       </div>
 
-      <Footer />
+     
     </div>
   );
 }
